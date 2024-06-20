@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    border: 5px solid red;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 70vh;
+    justify-content: flex-end;
+    padding-bottom: 20px; /* Added padding at the bottom */
+}
+
+.main-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.box-1, .box-2, .box-3 {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: 120px;
+}
+
+.box-1 {
+    background-color: #ffcc00; /* Friendly Yellow */
+    order: 3;
+}
+
+.box-2 {
+    background-color: #ff66b2; /* Friendly Pink */
+    order: 2;
+}
+
+.box-3 {
+    background-color: #66ccff; /* Friendly Blue */
+    order: 1;
+}
+
+.button {
+    margin-right: 10px; /* Aligns button with the third box */
+}
+
+.button button {
+    background-color: #4CAF50; /* Green */
+    padding: 12px 35px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: fantasy;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s, border-radius 0.5s;
+}
+
+.button button:hover {
+    background-color: transparent;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 0px 10px 0px 10px;
+}
